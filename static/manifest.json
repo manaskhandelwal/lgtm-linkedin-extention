@@ -1,6 +1,6 @@
 {
   "name": "Pedro Pedro LinkedIn",
-  "description": "A simple chrome extention to replace linkedin profile photo with a funny gif.",
+  "description": "A simple Chrome extension to replace a LinkedIn profile photo with a funny GIF.",
   "version": "0.1.0",
   "manifest_version": 3,
   "background": {

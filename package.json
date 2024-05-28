@@ -1,7 +1,7 @@
 {
   "name": "lgtm-linkedin-extention",
   "version": "0.1.0",
-  "description": "A simple chrome extention to replace linkedin profile photo with a funny image.",
+  "description": "A simple Chrome extension to replace a LinkedIn profile photo with a funny GIF.",
   "scripts": {
     "start": "webpack --watch --config webpack.dev.cjs",
     "build": "webpack --config webpack.prod.cjs",
