@@ -1,0 +1,55 @@
+{
+  "name": "lgtm-linkedin-extention",
+  "version": "0.1.0",
+  "description": "A simple chrome extention to replace linkedin profile photo with a funny image.",
+  "scripts": {
+    "start": "webpack --watch --config webpack.dev.cjs",
+    "build": "webpack --config webpack.prod.cjs",
+    "lint": "eslint --ext .ts,.js --max-warnings=0 .",
+    "prettier": "prettier \"src/**/*.ts\" --write"
+  },
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.24.6",
+    "@babel/plugin-transform-runtime": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "@babel/preset-typescript": "^7.24.6",
+    "@types/chrome": "^0.0.268",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
+    "babel-loader": "^9.1.3",
+    "c8": "^9.1.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-unused-imports": "^3.2.0",
+    "eslint-webpack-plugin": "^4.2.0",
+    "expect.js": "^0.3.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.10.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.24.6",
+    "normalize.css": "^8.0.1"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "npm run prettier",
+      "npm run lint"
+    ]
+  }
+}
